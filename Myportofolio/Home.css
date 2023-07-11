@@ -1,14 +1,14 @@
-
 /* Tata letak untuk perangkat mobile dengan lebar maksimum 600px */
 @media only screen and (max-width: 600px) {
+
     /* Atur tata letak sesuai kebutuhan untuk perangkat mobile */
     body {
         background-color: rgb(96, 235, 16);
         margin: 0%;
         overflow-x: hidden;
-    
+
     }
-    
+
     /* .leftnav {
         background-color: black;
         width: 25em;
@@ -17,182 +17,194 @@
     
     
     } */
-    
-     .backgroundright {
-       
-        
+
+    .backgroundright {
         background-image: url("background1.jpg");
         width: auto;
         height: 967px;
-      
         background-position: center;
-       
         filter: contrast(78%);
-        filter: brightness(90%); 
-    
+        filter: brightness(90%);
+
     }
+
     .certificatebox {
         /* background-color: white; */
-        
-      
+
         .textcerti {
             font-size: 4vw;
-            font-family:Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             color: white;
-         text-align: center;
-        font-weight: normal;
-         margin: 0%;
-         text-shadow: 1px 1px 6px black;
-        } 
+            text-align: center;
+            font-weight: normal;
+            margin: 0%;
+            text-shadow: 1px 1px 6px black;
+        }
     }
+
     .boxradius {
         width: 35vw;
-       padding-top: 1%;
-       padding-bottom: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.574);
-   
-       margin-left: auto;
-     
-       margin-right: auto;
-       
-        
+        margin-left: auto;
+        margin-right: auto;
     }
-    
-    
+
+
     /* .introtext {
         display: inline-block;
         margin-top: 70px;
         margin-left: 120px;
     } */
-    
+
     .introtext .judul1 {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 9vw;
-       margin: 0%;
-       text-align: center;
-       opacity: 0;
+        margin: 0%;
+        text-align: center;
+        opacity: 0;
         animation-name: fadeIn;
         animation-duration: 1s;
         animation-fill-mode: forwards;
         color: white;
-        padding-top:90px;
+        padding-top: 90px;
         text-shadow: 1px 1px 6px black;
-    } 
-    
+    }
+
     .paragraftintro {
         font-size: 17px;
-     text-align: center;
-     animation-name: fadeIn;
-     animation-duration: 1s;
-     padding-left: 5%;
-     padding-right: 5%;
-     animation-fill-mode: forwards;
+        text-align: center;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        padding-left: 5%;
+        padding-right: 5%;
+        animation-fill-mode: forwards;
         text-shadow: 1px 1px 4px black;
         color: white;
     }
+
     @keyframes fadeIn {
         0% {
-          opacity: 0;
+            opacity: 0;
         }
+
         100% {
-          opacity: 1;
+            opacity: 1;
         }
-      }
-    
+    }
+
+    .certibox {
+
+        /* background-color: rgb(155, 27, 27); */
+        overflow: hidden;
+        margin-top: 5vw;
+
+
+    }
+
+    .imgcertificate {
+        width: 40%;
+        margin-left: 6.5vw;
+        height: auto;
+        float: left;
+        box-shadow: 1px 2px 7px black;
+    }
+
     .mypicprofile .gambarku {
         margin-top: 30px;
         width: 189px;
-    
+       
         border: 4px solid white;
         box-sizing: border-box;
         border-radius: 180px;
         box-shadow: 1px 1px 16px white;
     }
-    
+
     .mypicprofile {
-    
+
         margin-left: auto;
         margin-right: auto;
         width: 189px;
-    
+
     }
-    
+
     .myname .namasaya {
         color: white;
         text-align: center;
         margin-bottom: 0%;
         font-family: Arial, Helvetica, sans-serif;
-    
+
     }
-    
+
     .mysosmed li {
         display: inline-block;
     }
-    
+
     .mysosmed {
         margin-top: 8px;
         width: 100px;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .mysosmed .ig {
         width: 35px;
         height: 35px;
         margin: 4px;
         transition: 0.3s;
-    
+
     }
-    
+
     .mysosmed .fb {
         width: 35px;
         height: 35px;
         margin: 4px;
         transition: 0.3s;
     }
-    
+
     .fb:hover {
         width: 45px;
         height: 45px;
         margin: 0px;
     }
-    
+
     .ig:hover {
         width: 45px;
         height: 45px;
         margin: 0px;
     }
-    
+
     /* DIBAWAH INI ADALAH PROPERTY DARI MENU */
     .menu {
-    
+
         margin-top: 50px;
         margin-left: 65px;
-    
+
     }
-    
+
     .menu li {
         display: block;
         margin-top: 40px;
-    
-    
+
+
     }
-    
+
     .menu .info {
         color: white;
         display: block;
         letter-spacing: 5px;
         margin: -30px 0px 0px 50px;
     }
-    
+
     .icon {
-    
+
         width: 30px;
         height: 30px;
-    
+
     }
-    
+
     /* .icon:hover {
     
         width: 40px;
@@ -200,14 +212,15 @@
         filter: drop-shadow(4px 4px 10px blue);
     
     } */
-    
+
     .info:hover {
         color: #834BF4;
         font-size: 25px;
         text-shadow: 4px 4px 10px blue;
         cursor: pointer;
-    
+
     }
+
     .copyright {
         display: block;
         font-size: 18px;
@@ -215,11 +228,12 @@
         color: white;
         margin: 0%;
     }
-    
+
     .textinfo {
         margin-top: 250px;
         margin-bottom: -20px;
     }
+
     /* .continermenu {
         
         width: 70em;
@@ -232,16 +246,19 @@
         width: 180px;
         height: 260px;
     }
-    .menuawal{
-        
+
+    .menuawal {
+
         border-radius: 7px;
         box-shadow: 1px 1px 8px black;
         transition: .3s;
     }
-    .menuawal:hover{
-        
+
+    .menuawal:hover {
+
         filter: drop-shadow(4px 4px 12px green);
     }
+
     .continermenu .menu2 {
         margin-left: 50px;
         display: inline-block;
@@ -249,51 +266,56 @@
         height: 260px;
         height: 260px;
     }
+
     .karya {
         border-radius: 7px;
         box-shadow: 1px 1px 8px black;
         transition: .3s;
-        
+
     }
-    .karya:hover{
-        
+
+    .karya:hover {
+
         filter: drop-shadow(4px 4px 12px green);
     }
+
     .gradientbox {
-        background: linear-gradient(black,white);
+        background: linear-gradient(black, white);
         width: 100%;
         height: 200px;
     }
+
     .boxkonten1 {
         background-color: white;
         width: 100%;
         height: 400px;
     }
-  }
-  
-  /* Tata letak untuk perangkat tablet dengan lebar antara 601px dan 1024px */
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+}
+
+/* Tata letak untuk perangkat tablet dengan lebar antara 601px dan 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
     /* Atur tata letak sesuai kebutuhan untuk perangkat tablet */
-  }
-  
-  /* Tata letak untuk perangkat desktop dengan lebar lebih dari 1024px */
-  @media only screen and (min-width: 1025px) {
+}
+
+/* Tata letak untuk perangkat desktop dengan lebar lebih dari 1024px */
+@media only screen and (min-width: 1025px) {
+
     /* Atur tata letak sesuai kebutuhan untuk perangkat desktop */
     body {
         background-color: white;
         margin: 0%;
-    
+
     }
-    
+
     .leftnav {
         background-color: black;
         width: 25em;
         height: 967px;
         box-shadow: 3px 2px 15px white;
-    
-    
+
+
     }
-    
+
     .backgroundright {
         margin-left: 400px;
         margin-top: -967px;
@@ -304,138 +326,139 @@
         background-size: cover;
         filter: contrast(78%);
         filter: brightness(90%);
-    
+
     }
-    
+
     .introtext {
         display: inline-block;
         margin-top: 70px;
         margin-left: 120px;
     }
-    
+
     .introtext .judul1 {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 50px;
         margin: 0%;
-    
+
         color: white;
         text-shadow: 1px 1px 6px black;
     }
-    
+
     .paragraftintro {
         font-size: 19px;
         text-shadow: 1px 1px 4px black;
         color: white;
     }
-    
+
     .mypicprofile .gambarku {
         margin-top: 30px;
         width: 189px;
-    
+
         border: 4px solid white;
         box-sizing: border-box;
         border-radius: 180px;
         box-shadow: 1px 1px 16px white;
     }
-    
+
     .mypicprofile {
-    
+
         margin-left: auto;
         margin-right: auto;
         width: 189px;
-    
+
     }
-    
+
     .myname .namasaya {
         color: white;
         text-align: center;
         margin-bottom: 0%;
         font-family: Arial, Helvetica, sans-serif;
-    
+
     }
-    
+
     .mysosmed li {
         display: inline-block;
     }
-    
+
     .mysosmed {
         margin-top: 8px;
         width: 100px;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .mysosmed .ig {
         width: 35px;
         height: 35px;
         margin: 4px;
         transition: 0.3s;
-    
+
     }
-    
+
     .mysosmed .fb {
         width: 35px;
         height: 35px;
         margin: 4px;
         transition: 0.3s;
     }
-    
+
     .fb:hover {
         width: 45px;
         height: 45px;
         margin: 0px;
     }
-    
+
     .ig:hover {
         width: 45px;
         height: 45px;
         margin: 0px;
     }
-    
+
     /* DIBAWAH INI ADALAH PROPERTY DARI MENU */
     .menu {
-    
+
         margin-top: 50px;
         margin-left: 65px;
-    
+
     }
-    
+
     .menu li {
         display: block;
         margin-top: 40px;
-    
-    
+
+
     }
-    
+
     .menu .info {
         color: white;
         display: block;
         letter-spacing: 5px;
         margin: -30px 0px 0px 50px;
     }
-    
+
     .icon {
-    
+
         width: 30px;
         height: 30px;
-    
+
     }
-    
+
     .icon:hover {
-    
+
         width: 40px;
         height: 40px;
         filter: drop-shadow(4px 4px 10px blue);
-    
+
     }
-    
+
     .info:hover {
         color: #834BF4;
         font-size: 25px;
         text-shadow: 4px 4px 10px blue;
         cursor: pointer;
-    
+
     }
+
     .copyright {
         display: block;
         font-size: 18px;
@@ -443,33 +466,38 @@
         color: white;
         margin: 0%;
     }
-    
+
     .textinfo {
         margin-top: 250px;
         margin-bottom: -20px;
     }
+
     .continermenu {
-        
+
         width: 70em;
         margin-left: 120px;
         margin-top: 70px;
-        
+
     }
+
     .continermenu .menu1 {
         display: inline-block;
         width: 180px;
         height: 260px;
     }
-    .menuawal{
-        
+
+    .menuawal {
+
         border-radius: 7px;
         box-shadow: 1px 1px 8px black;
         transition: .3s;
     }
-    .menuawal:hover{
-        
+
+    .menuawal:hover {
+
         filter: drop-shadow(4px 4px 12px green);
     }
+
     .continermenu .menu2 {
         margin-left: 50px;
         display: inline-block;
@@ -477,24 +505,28 @@
         height: 260px;
         height: 260px;
     }
+
     .karya {
         border-radius: 7px;
         box-shadow: 1px 1px 8px black;
         transition: .3s;
-        
+
     }
-    .karya:hover{
-        
+
+    .karya:hover {
+
         filter: drop-shadow(4px 4px 12px green);
     }
+
     .gradientbox {
-        background: linear-gradient(black,white);
+        background: linear-gradient(black, white);
         width: 100%;
         height: 200px;
     }
+
     .boxkonten1 {
         background-color: white;
         width: 100%;
         height: 400px;
     }
-  }
+}
