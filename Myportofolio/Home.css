@@ -42,9 +42,8 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 9vw;
        margin: 0%;
-       opacity: 0;
        text-align: center;
-      
+       opacity: 0;
         animation-name: fadeIn;
         animation-duration: 1s;
         animation-fill-mode: forwards;
@@ -56,6 +55,9 @@
     .paragraftintro {
         font-size: 17px;
      text-align: center;
+     animation-name: fadeIn;
+     animation-duration: 1s;
+     animation-fill-mode: forwards;
         text-shadow: 1px 1px 4px black;
         color: white;
     }
