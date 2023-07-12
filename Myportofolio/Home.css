@@ -127,6 +127,45 @@
 
 
     }
+    .cpp{
+        background-color: rgb(6, 237, 114);
+        width: 50%;
+        height: 20px;
+        color: white;
+        display: inline-block;
+        box-shadow: 1px 1px 4px white;
+    }
+    .csharp{
+        margin-top: 3vw;
+        background-color: rgb(6, 237, 114);
+        width: 75%;
+        height: 20px;
+        color: white;
+        display: inline-block;
+        border-radius: 10%;
+        box-shadow: 1px 1px 4px white;
+    }
+  .namear {
+    display: inline-block;
+  }
+  .persenbox {
+   
+    display: inline-block;
+    width: 80%;
+  }
+    h4{
+        margin-top: 0%;
+     margin-bottom: 3vw;
+        display: inline-block;
+      
+        text-shadow: 1px 1px 4px black;
+        color: white;
+    }
+    .persentasebox {
+        margin-top: 5vw;
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
     
 
     .imgcertificate {
