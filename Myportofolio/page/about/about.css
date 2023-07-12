@@ -3,7 +3,7 @@
 
     /* Atur tata letak sesuai kebutuhan untuk perangkat mobile */
     body {
-        background-color: white;
+        background-color: rgb(68, 68, 68);
         margin: 0%;
         overflow-x: hidden;
 
@@ -16,16 +16,7 @@
         filter: contrast(78%);
         filter: brightness(90%);
 
-    }
-
-  
-
- 
-   
-
-   
-
-    
+    }  
     .navbar{
         padding-top: 10px;
         height: 100%;
@@ -55,7 +46,23 @@
         color: white;
         text-shadow: 1px 1px 4px black;
       } 
- 
+      /*  testing */
+
+      .music-player {
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .play-btn, .pause-btn, .stop-btn {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        margin: 5px;
+        cursor: pointer;
+      }
+      
+      
 }
 
 /* Tata letak untuk perangkat tablet dengan lebar antara 601px dan 1024px */
