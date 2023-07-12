@@ -10,7 +10,7 @@
 }
     /* Atur tata letak sesuai kebutuhan untuk perangkat mobile */
     body {
-        background-color: rgb(96, 235, 16);
+        background-color: white;
         margin: 0%;
         overflow-x: hidden;
 
@@ -67,11 +67,14 @@
         padding-top: 90px;
         text-shadow: 1px 1px 6px black;
     }
-   .vdytb {
-    margin-top: 6vw;
-    width: 8vw;
-    height: auto;
-   }
+    hr {
+        border: none;
+       width: 88%;
+        height: 2px;
+        background-color: white;
+       
+      }
+    
     .paragraftintro {
        
         font-size: 16px;
@@ -84,7 +87,24 @@
         text-shadow: 1px 1px 4px black;
         color: white;
     }
-
+    @keyframes randomize {
+        0% {
+          transform: translate(0);
+        }
+        30% {
+          transform: translate(-2px, -4px) rotate(2deg);
+        }
+        60% {
+          transform: translate(4px, 2px) rotate(-2deg);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+      
+      .paragraftintro {
+        animation: randomize 2s infinite;
+      }
     @keyframes fadeIn {
         0% {
             opacity: 0;
