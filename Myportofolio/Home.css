@@ -105,14 +105,19 @@
         top: 95%;
         z-index: 9999;
       
-        background: linear-gradient(to bottom, #f8f8f861, #060101);
+        background: linear-gradient(to bottom, #f8f8f861, #ffffff);
     }
     .navbar ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
       }
-      
+      .Home{
+        background: linear-gradient(to bottom, #1eec6661, #ffffff00);
+       width: 10%;
+       text-align: center;
+       
+      }
        ul li {
         display: inline-block;
       margin-left: 2vw;
