@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(68, 68, 68);
+    margin: 0%;
+    overflow-x: hidden;
+
+}
+
+.navbar{
+    padding-top: 10px;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top: 95%;
+    z-index: 9999;
+  
+    background: linear-gradient(to bottom, #f8f8f861, #ffffff);
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.navbar ul li .Archivement{
+    color: greenyellow;
+ }
+  
+   ul li {
+    display: inline-block;
+  margin-left: 2vw;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+  } 

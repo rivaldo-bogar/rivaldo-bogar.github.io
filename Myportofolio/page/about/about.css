@@ -8,15 +8,7 @@
         overflow-x: hidden;
 
     }
-    .backgroundright {
-        background-image: url("background1.jpg");
-        width: auto;
-        height: 967px;
-        background-position: center;
-        filter: contrast(78%);
-        filter: brightness(90%);
 
-    }  
     .navbar{
         padding-top: 10px;
         height: 100%;
@@ -61,6 +53,9 @@
         margin: 5px;
         cursor: pointer;
       }
+    
+      
+      
       
       
 }

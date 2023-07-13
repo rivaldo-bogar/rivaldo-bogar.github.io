@@ -81,10 +81,11 @@
         font-size: 16px;
         text-align: center;
         animation-name: fadeIn;
+        animation-fill-mode: forwards;
         animation-duration: 1s;
         padding-left: 5%;
         padding-right: 5%;
-        animation-fill-mode: forwards;
+        
         text-shadow: 1px 1px 4px black;
         color: white;
     }
@@ -130,28 +131,90 @@
     .cpp{
         background-color: rgb(6, 237, 114);
         width: 50%;
-        height: 20px;
+        height: 5vw;
         color: white;
         display: inline-block;
         box-shadow: 1px 1px 4px white;
+         animation: fillcpp 2s ease-in-out forwards;
     }
     .csharp{
         margin-top: 3vw;
         background-color: rgb(6, 237, 114);
         width: 75%;
-        height: 20px;
+        height: 5vw;
         color: white;
         display: inline-block;
-        border-radius: 10%;
+       animation: fillcsharp 2s ease-in-out forwards;
         box-shadow: 1px 1px 4px white;
     }
+    .justc{
+        margin-top: 3vw;
+        background-color: rgb(6, 237, 114);
+        width: 85%;
+        height: 5vw;
+        color: white;
+        display: inline-block;
+        animation: justc 2s ease-in-out forwards;
+       
+        box-shadow: 1px 1px 4px white;
+    }
+
+    /* ANIMATION PERSEN */
+
+    @keyframes fillcsharp {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+    @keyframes fillcpp {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
   .namear {
-    display: inline-block;
+    animation-fill-mode: forwards;
+        animation-name: fadeIn;
+        animation-duration: 1s;
   }
   .persenbox {
    
     display: inline-block;
     width: 80%;
+  }
+      @keyframes justc{
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+
+
+
+/* ---------------------------- */
+
+
+
+
+  .namear {
+    display: inline-block;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+  
+  }
+  .persenbox {
+   
+    display: inline-block;
+    width: 80%;
+   
   }
     h4{
         margin-top: 0%;
