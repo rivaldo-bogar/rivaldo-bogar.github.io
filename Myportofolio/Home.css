@@ -88,7 +88,8 @@
         animation-fill-mode: forwards;
         animation-name: fadeIn;
         animation-duration: 1s;
-        margin-bottom: 3vw;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
      
         }
         .textjc {
