@@ -12,19 +12,19 @@
     body {
         background-color: rgb(100, 93, 93);
         margin: 0%;
-       
-        overflow-x: hidden;
       
+   
 
     }
     .backgroundright {
+        overflow-y: scroll;
         background-image: url("background1.jpg");
         width: auto;
         height: 967px;
          /* background-position: center; */
         filter: contrast(78%);
         filter: brightness(90%);
-       
+        overflow-x: hidden;
     }
     
 
