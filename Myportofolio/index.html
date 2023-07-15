@@ -46,30 +46,31 @@
 
         <div class="cobox">
             <div class="boxrd">
-                <h3 class="textjc">comment</h3>
+                <h3 class="textjc">box comment</h3>
             </div>
         </div>
 
         <div class="comment-box">
-            <h2>Tambahkan Komentar</h2>
+
             <form id="commentForm">
                 <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required><br>
+                <input type="text" id="name" name="name"><br>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" name="email"><br>
 
                 <label for="comment">Komentar:</label>
-                <textarea id="comment" name="comment" required></textarea><br>
+                <textarea id="comment" name="comment"></textarea><br>
 
-                <input type="submit" value="Kirim Komentar">
+                <input class="btn_send" type="submit" value="Send">
             </form>
         </div>
         <br> <br> <br> <br>
-        <div id="commentList">
-            <h2>Komentar</h2>
-            <ul id="comments"></ul>
-        </div>
+
+    </div>
+    <div id="commentList">
+        <h2>Komentar</h2>
+        <ul id="comments"></ul>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>

@@ -25,6 +25,7 @@
         filter: brightness(90%);
        
     }
+    
 
     .certificatebox {
         /* background-color: white; */
@@ -118,20 +119,40 @@
   }
   
   .comment-box {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #77777772;
+  padding: 2vw;
+  box-shadow: 1px 2px 7px white;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   
-  label, input, textarea {
-    display: block;
+  label{
+   
+    color: white;
+   
+   
+   
+  }
+  input,textarea {
     margin-bottom: 10px;
+    display: block;
+    background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        padding: 5px 0;
+      
+      
   }
-  
+  .btn_send {
+    background-color: greenyellow;
+    color: black;
+  }
   #commentList {
-    max-width: 600px;
+   
     margin: 20px auto;
   }
   
