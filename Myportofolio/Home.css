@@ -31,15 +31,16 @@
         animation-fill-mode: forwards;
         animation-name: fadeIn;
         animation-duration: 1s;
-        .textcerti {
-            font-size: 4vw;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            text-align: center;
-            font-weight: normal;
-            margin: 0%;
-            text-shadow: 1px 1px 6px black;
-        }
+        
+    }
+    .textcerti {
+        font-size: 4vw;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+        font-weight: normal;
+        margin: 0%;
+        text-shadow: 1px 1px 6px black;
     }
 
     .boxradius {
@@ -75,7 +76,101 @@
         background-color: white;
        
       }
-    
+   
+      
+  /* textcommentbox */
+
+
+      .cobox {
+        /* background-color: white; */
+        animation-fill-mode: forwards;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        margin-bottom: 3vw;
+     
+        }
+        .textjc {
+            font-size: 4vw;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            font-weight: normal;
+            margin: 0%;
+            text-shadow: 1px 1px 6px black;
+    }
+
+    .boxrd {
+        width: 35vw;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.574);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+/* EMAIL CSS TEST */
+
+ h2 {
+    text-align: center;
+    margin: 0%;
+  }
+  
+  .comment-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #commentList {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  #comments {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .comment {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .comment .author {
+    font-weight: bold;
+  }
+  .boxtxcomment {
+    margin: 0%;
+  }
+  
+  .comment .email {
+    color: #777;
+  }
+  
+  .comment .message {
+    margin-top: 5px;
+  }
+
+  
+
+
+
+
+
+
+
+
     .paragraftintro {
        
         font-size: 16px;

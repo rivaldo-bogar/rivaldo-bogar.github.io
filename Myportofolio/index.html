@@ -16,7 +16,7 @@
             <li><a href="#" class="Home">Home</a></li>
             <li><a href="page/about/about.html" class="About">About</a></li>
             <li><a href="page/archivement/archivement.html">Archivement</a></li>
-            <li><a href="#">With girlfriend</a></li>
+            <li><a href="#">Photo</a></li>
         </ul>
     </div>
     <div class="backgroundright">
@@ -43,8 +43,36 @@
         <hr>
         <!-- testing -->
 
-    </div>
 
+        <div class="cobox">
+            <div class="boxrd">
+                <h3 class="textjc">comment</h3>
+            </div>
+        </div>
+
+        <div class="comment-box">
+            <h2>Tambahkan Komentar</h2>
+            <form id="commentForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="comment">Komentar:</label>
+                <textarea id="comment" name="comment" required></textarea><br>
+
+                <input type="submit" value="Kirim Komentar">
+            </form>
+        </div>
+        <br> <br> <br> <br>
+        <div id="commentList">
+            <h2>Komentar</h2>
+            <ul id="comments"></ul>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script src="index.js"></script>
 
 </body>
