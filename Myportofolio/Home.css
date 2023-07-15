@@ -161,9 +161,8 @@
   }
   #commentList {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-   background-color: red;
+  
+   
     
   }
   
@@ -172,7 +171,7 @@
     list-style-type: none;
     padding: 0;
    
-    background-color: yellow;
+    
   }
   
   .comment {
