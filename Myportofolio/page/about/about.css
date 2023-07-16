@@ -9,55 +9,67 @@
 
     }
 
-    .navbar{
+    .navbar {
         padding-top: 10px;
         height: 100%;
         position: fixed;
         width: 100%;
         top: 95%;
         z-index: 9999;
-      
+
         background: linear-gradient(to bottom, #f8f8f861, #ffffff);
     }
+
     .navbar ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-      }
- .navbar ul li .About{
+    }
+
+    .navbar ul li .About {
         color: greenyellow;
-     }
-      
-       ul li {
+    }
+
+    ul li {
         display: inline-block;
-      margin-left: 2vw;
-      }
-      
-      .navbar ul li a {
+        margin-left: 2vw;
+    }
+
+    .navbar ul li a {
         text-decoration: none;
         color: white;
         text-shadow: 1px 1px 4px black;
-      } 
-      /*  testing */
+    }
 
-      .music-player {
-        text-align: center;
-        padding: 20px;
-      }
-      
-      .play-btn, .pause-btn, .stop-btn {
-        background-color: #3498db;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        margin: 5px;
-        cursor: pointer;
-      }
-    
-      
-      
-      
-      
+    /*  testing */
+    .bgimg {
+        width: 100%;
+
+
+    }
+
+    .profileimg {
+        width: 100%;
+      box-shadow: 1px 2px 7px white;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-top: 0%;
+        margin-right: auto;
+    }
+
+    .prof {
+        margin-top: -25%;
+        width: 45%;
+
+        z-index: 2;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
 }
 
 /* Tata letak untuk perangkat tablet dengan lebar antara 601px dan 1024px */
