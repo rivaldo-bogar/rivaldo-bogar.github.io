@@ -9,7 +9,7 @@
 
   /* Atur tata letak sesuai kebutuhan untuk perangkat mobile */
   body {
-    background-color: rgb(87, 84, 84);
+    background-color: rgb(199, 199, 199);
     margin: 0%;
     overflow-x: hidden;
 
@@ -47,13 +47,13 @@
   .contentblender{
     margin-left: 4vw;
   
-    width: 96vw;
+    width: 95vw;
     background-color: red;
     
 }
 .Intropagetext{
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 6vw;
+    margin-left: 8vw;
 }
  /* BOOTSTRAP_5 CODE */
 .imgthub{
@@ -61,9 +61,9 @@
     border-radius: 10px;
 }
 .boximg{
-    margin-left: 2vw;
+    margin-left: 4vw;
     border-radius: 10px;
-    width: 20vw;
+    width: 40vw;
     background-color: rgb(95, 95, 95);
     float: left;
     margin-bottom: 2vw;
