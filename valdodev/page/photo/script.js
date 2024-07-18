@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-    // Create a storage reference
+    // Create a storage referencex
     const storage = firebase.storage();
     const storageRef = storage.ref();
   

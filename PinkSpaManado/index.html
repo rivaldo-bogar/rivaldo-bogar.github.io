@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa & Massage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url('japan.jpg'); /* URL gambar dari Google Drive */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        header {
+            background: linear-gradient(90deg, rgba(46, 226, 214, 0.8), rgba(142, 68, 173, 0.8));
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px; /* Menambahkan margin-bottom untuk jarak antara header dan konten berikutnya */
+        }
+        header h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 20px 20px 20px; /* margin bottom ditambahkan */
+        }
+        header .phone, header .views {
+            font-size: 1em;
+            margin: 0 20px 20px 20px; /* margin bottom ditambahkan */
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+        }
+        .hero {
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+            border-radius: 8px;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3em;
+            z-index: 2;
+            position: relative;
+            animation: fadeIn 3s ease-in-out infinite alternate;
+        }
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            z-index: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .hero img.active {
+            opacity: 1;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .service {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+            margin-bottom: 20px;
+            position: relative; /* Untuk konten yang ada di dalam service */
+            overflow: hidden; /* Mengatur overflow agar gambar tidak keluar dari border */
+        }
+        .service img {
+            width: 100%;
+            height: auto; /* Untuk membuat gambar responsif */
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .service:hover img {
+            transform: scale(1.1); /* Efek scaling saat hover */
+        }
+        .service h2 {
+            margin-top: 10px;
+        }
+        .video {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .video video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: rgba(142, 68, 173, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .hero {
+                height: 300px;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .service {
+                width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                padding: 10px 0;
+            }
+            .hero {
+                height: 200px;
+            }
+            .hero h1 {
+                font-size: 1.5em;
+            }
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                width: 80%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pink Spa Manado</h1>
+    <div class="phone">Phone: +62 821-8860-3006</div>
+    <div class="views">live view: <span id="viewCount">0</span></div>
+    <a href="https://api.whatsapp.com/send?phone=6282188603006" target="_blank" class="whatsapp-button">Chat via WhatsApp</a>
+    </header>
+    <div class="container">
+        <div class="hero">
+            <h1>Badan sakit.?manjo</h1>
+            <img src="/image/1.png" class="active">
+            <img src="/image/2.png">
+            <img src="/image/3.png">
+        </div>
+        <h2>Foto</h2>
+        <div class="services">
+            <div class="service">
+                <img src="image/manupromo.jpg" alt="Massage">
+                <h2>Menu</h2>
+                <p>Untuk menunya, agak di update setiap harinya, karena menyesuaikan ketersediaan minyak atau lulurnya.</p>
+               
+            </div>
+            <div class="service">
+                <img src="foto2ya.jpg" alt="Facial">
+                <h2>Kasir</h2>
+                <p>Pada bagian sini kasir pembayaran.</p>
+               
+            </div>
+            <div class="service">
+                <img src="foto3ya.jpg" alt="Spa">
+                <h2>Jalan ke kamar</h2>
+                <p>Untuk tipe jenis kamar bisa di lihat di menu, atau tanyakan ke nomor tertera langsung</p>
+               
+            </div>
+            <div class="service">
+                <img src="foto3ya.jpg" alt="Spa">
+                <h2>Spa Packages</h2>
+                <p>Indulge in our luxurious spa packages for a complete relaxation experience.</p>
+               
+            </div>
+        </div>
+        <div class="video">
+            <h2>Watch Our Spa Video</h2>
+            <video controls>
+                <source src="spavideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pink Spa & Massage. All rights reserved.</p>
+    </footer>
+    <script>
+        const images = document.querySelectorAll('.hero img');
+        let currentIndex = 0;
+
+        function changeImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(changeImage, 5000);
+
+        // Animasi jumlah view
+        const viewCountElement = document.getElementById('viewCount');
+        let viewCount = 0;
+
+        function updateViewCount() {
+            // Simulasi perubahan jumlah view
+            const change = Math.floor(Math.random() * 10) - 5;
+            viewCount = Math.max(0, viewCount + change);
+            viewCountElement.textContent = viewCount;
+        }
+
+        setInterval(updateViewCount, 2000);
+    </script>
+</body>
+</html>
