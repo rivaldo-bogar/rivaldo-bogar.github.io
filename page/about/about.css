@@ -1,0 +1,240 @@
+/* Tata letak untuk perangkat mobile dengan lebar maksimum 600px */
+@media only screen and (max-width: 600px) {
+
+    /* Atur tata letak sesuai kebutuhan untuk perangkat mobile */
+    body {
+        background-color: rgb(46, 46, 46);
+        margin: 0%;
+        overflow-x: hidden;
+
+    }
+
+    .navbar {
+        padding-top: 10px;
+        height: 100%;
+        position: fixed;
+        width: 100%;
+        top: 95%;
+        z-index: 9999;
+
+        background: linear-gradient(to bottom, #f8f8f861, #ffffff);
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li .About {
+        color: greenyellow;
+    }
+
+    ul li {
+        display: inline-block;
+        margin-left: 2vw;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+    }
+
+    /*  testing */
+    .bgimg {
+        width: 100%;
+    }
+    .textnamebox .myname {
+       
+        color: white;
+       font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-shadow: 1px 2px 5px black;
+    }
+    .textintrobox {
+        background-color: #ffffff50;
+    }
+    .textintrobox{
+      padding: 2px;
+      border-radius: 5px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .textintro {
+        text-align: center;
+        color: white;
+       
+    }
+
+    .profileimg {
+        width: 100%;
+      box-shadow: 1px 2px 7px white;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-top: 0%;
+        margin-right: auto;
+    }
+
+    .prof {
+        
+        width: 45%;
+
+        z-index: 2;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+ /* CSS untuk popup box */
+ .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    visibility: hidden;
+  }
+
+  .popup-content {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .popup-overlay.show {
+    visibility: visible;
+  }
+
+
+}
+
+/* Tata letak untuk perangkat tablet dengan lebar antara 601px dan 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Atur tata letak sesuai kebutuhan untuk perangkat tablet */
+}
+
+/* Tata letak untuk perangkat desktop dengan lebar lebih dari 1024px */
+@media only screen and (min-width: 1025px) {
+
+    /* Atur tata letak sesuai kebutuhan untuk perangkat desktop */
+    body {
+        background-color: rgb(46, 46, 46);
+        margin: 0%;
+        overflow-x: hidden;
+
+    }
+
+    .navbar {
+        padding-top: 10px;
+        height: 100%;
+        position: fixed;
+        width: 100%;
+        top: 95%;
+        z-index: 9999;
+
+        background: linear-gradient(to bottom, #f8f8f861, #ffffff);
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li .About {
+        color: greenyellow;
+    }
+
+    ul li {
+        display: inline-block;
+        margin-left: 2vw;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+    }
+
+    /*  testing */
+   
+    .textnamebox .myname {
+       
+        color: white;
+       font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-shadow: 1px 2px 5px black;
+    }
+    .textintrobox {
+        background-color: #ffffff50;
+    }
+    .textintrobox{
+      padding: 2px;
+      border-radius: 5px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .textintro {
+        text-align: center;
+        color: white;
+       
+    }
+
+    .profileimg {
+        width: 100%;
+      box-shadow: 1px 2px 7px white;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-top: 0%;
+        margin-right: auto;
+    }
+
+    .prof {
+       margin-top: 2vw;
+        width: 25%;
+
+        z-index: 2;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+ /* CSS untuk popup box */
+ .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    visibility: hidden;
+  }
+
+  .popup-content {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .popup-overlay.show {
+    visibility: visible;
+  }
+
+
+}

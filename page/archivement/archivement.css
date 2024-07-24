@@ -1,0 +1,179 @@
+
+
+
+
+
+
+  /* Tata letak untuk perangkat mobile dengan lebar maksimum 600px */
+@media only screen and (max-width: 600px) {
+
+  /* Atur tata letak sesuai kebutuhan untuk perangkat mobile */
+  body {
+    background-color: rgb(199, 199, 199);
+    margin: 0%;
+    overflow-x: hidden;
+
+}
+
+.navbar{
+    padding-top: 10px;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top: 95%;
+    z-index: 9999;
+  
+    background: linear-gradient(to bottom, #f8f8f861, #ffffff);
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.navbar ul li .Archivement{
+    color: greenyellow;
+ }
+  
+   ul li {
+    display: inline-block;
+  margin-left: 2vw;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+  } 
+  .contentblender{
+    margin-left: 4vw;
+  
+    width: 95vw;
+    background-color: red;
+    
+}
+.Intropagetext{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 8vw;
+}
+ /* BOOTSTRAP_5 CODE */
+.imgthub{
+    width: 100%; 
+    border-radius: 10px;
+}
+.boximg{
+    margin-left: 6vw;
+    border-radius: 10px;
+    width: 80vw;
+    background-color: rgb(95, 95, 95);
+    float: left;
+    margin-bottom: 2vw;
+    box-shadow: 2px 4px 8px rgb(49, 214, 255);
+    
+}
+.boximg:hover {
+    box-shadow: 2px 4px 8px rgb(255, 174, 51);
+
+}
+.judulcontent {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 1vw;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.paracontent{
+    padding: 10px 10px 10px 10px;
+    margin-top: 0%;
+    color: white;
+}
+
+
+}
+
+/* Tata letak untuk perangkat tablet dengan lebar antara 601px dan 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Atur tata letak sesuai kebutuhan untuk perangkat tablet */
+}
+
+/* Tata letak untuk perangkat desktop dengan lebar lebih dari 1024px */
+@media only screen and (min-width: 1025px) {
+   
+  /* Atur tata letak sesuai kebutuhan untuk perangkat desktop */
+  body {
+      background-color: rgb(180, 178, 178);
+      margin: 0%;
+  }
+  .navbar ul li .Archivement{
+    color: greenyellow;
+ }
+ .card {
+    background-color: yellow;
+ }
+  .navbar {
+    padding-top: 10px;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top: 95%;
+    z-index: 9999;
+    background: linear-gradient(to bottom, #f8f8f861, #ffffff);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    display: inline-block;
+    margin-left: 2vw;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+.contentblender{
+    margin-left: 4vw;
+  
+    width: 96vw;
+    background-color: red;
+    
+}
+.Intropagetext{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 6vw;
+}
+ /* BOOTSTRAP_5 CODE */
+.imgthub{
+    width: 100%; 
+    border-radius: 10px;
+}
+.boximg{
+    margin-left: 2vw;
+    border-radius: 10px;
+    width: 20vw;
+    background-color: rgb(95, 95, 95);
+    float: left;
+    margin-bottom: 2vw;
+    box-shadow: 2px 4px 8px rgb(49, 214, 255);
+    
+}
+.boximg:hover {
+    box-shadow: 2px 4px 8px rgb(255, 174, 51);
+
+}
+.judulcontent {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 1vw;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.paracontent{
+    padding: 10px 10px 10px 10px;
+    margin-top: 0%;
+    color: white;
+}
+}

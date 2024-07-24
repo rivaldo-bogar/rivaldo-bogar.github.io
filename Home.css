@@ -1,0 +1,615 @@
+/* Tata letak untuk perangkat mobile dengan lebar maksimum 600px */
+@media only screen and (max-width: 600px) {
+@font-face {
+    font-family:  Megicsound;
+    src: url(myfont/Magic\ Sound.ttf);
+}
+@font-face {
+    font-family:  Code;
+    src: url(myfont/Code.ttf);
+}
+    /* Atur tata letak sesuai kebutuhan untuk perangkat mobile */
+    body {
+        background-color: rgb(100, 93, 93);
+        margin: 0%;
+      
+   
+
+    }
+    .backgroundright {
+        overflow-y: scroll;
+        background-image: url("background1.jpg");
+        width: auto;
+        height: 967px;
+         /* background-position: center; */
+        filter: contrast(78%);
+        filter: brightness(90%);
+        overflow-x: hidden;
+    }
+    
+
+    .certificatebox {
+        /* background-color: white; */
+        animation-fill-mode: forwards;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        
+    }
+    .textcerti {
+        font-size: 4vw;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+        font-weight: normal;
+        margin: 0%;
+        text-shadow: 1px 1px 6px black;
+    }
+
+    .boxradius {
+        width: 35vw;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.574);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+ 
+    .introtext .judul1 {
+        font-family: Arial, Helvetica, sans-serif;
+      
+        font-size: 10vw;
+        margin: 0%;
+        text-align: center;
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        color: white;
+        padding-top: 90px;
+        text-shadow: 1px 1px 6px black;
+    }
+    hr {
+        border: none;
+       width: 88%;
+        height: 2px;
+        background-color: white;
+       
+      }
+   
+      
+  /* textcommentbox */
+
+
+      .cobox {
+        /* background-color: white; */
+        animation-fill-mode: forwards;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+        animation-fill-mode: forwards;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+     
+        }
+        .textjc {
+            font-size: 4vw;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            font-weight: normal;
+            margin: 0%;
+            text-shadow: 1px 1px 6px black;
+    }
+
+    .boxrd {
+        width: 35vw;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.574);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+/* EMAIL CSS TEST */
+
+ h2 {
+    text-align: center;
+    margin: 0%;
+  }
+  
+  .comment-box {
+    width: 75%;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #77777772;
+  padding: 2vw;
+  box-shadow: 1px 2px 7px white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  label{
+   
+    color: white;
+   
+   
+   
+  }
+  input,textarea {
+    margin-bottom: 10px;
+    display: block;
+    width: 60%;
+    color: white;
+    background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        padding: 5px 0;
+      
+      
+  }
+  .btn_send {
+    display: block;
+    border: none;
+   width: 15vw;
+   height: 7vw;
+   border-radius: 6px;
+    background-color: greenyellow;
+    color: black;
+  }
+  #commentList {
+    background-color: red;
+  width: 80%;
+  
+   
+    
+  }
+  
+  
+  #comments {
+    list-style-type: none;
+    padding: 0;
+   
+    
+  }
+  
+  .comment {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3%;
+    margin-bottom: 10px;
+  }
+  
+  .comment .author {
+    font-weight: bold;
+  }
+  .boxtxcomment {
+    margin: 0%;
+  }
+  
+  .comment .email {
+    color: #777;
+  }
+  
+  .comment .message {
+    margin-top: 5px;
+  }
+
+
+    .paragraftintro {
+       
+        font-size: 16px;
+        text-align: center;
+        animation-name: fadeIn;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        padding-left: 5%;
+        padding-right: 5%;
+        
+        text-shadow: 1px 1px 4px black;
+        color: white;
+    }
+    @keyframes randomize {
+        0% {
+          transform: translate(0);
+        }
+        30% {
+          transform: translate(-2px, -4px) rotate(2deg);
+        }
+        60% {
+          transform: translate(4px, 2px) rotate(-2deg);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+      
+      .paragraftintro {
+        animation: randomize 2s infinite;
+      }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .certibox {
+        animation-fill-mode: forwards;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        /* background-color: rgb(155, 27, 27); */
+        overflow: hidden;
+        margin-top: 1vw;
+
+
+    }
+    .imgcertificate {
+        width: 40%;
+        margin-top:4vw;
+        margin-left: 6.5vw;
+        height: auto;
+        float: left;
+        box-shadow: 1px 2px 7px black;
+    }
+    .navbar{
+        padding-top: 10px;
+        height: 100%;
+        position: fixed;
+        width: 100%;
+        top: 95%;
+        z-index: 9999;
+      
+        background: linear-gradient(to bottom, #f8f8f861, #ffffff);
+    }
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+ .navbar ul li .Home{
+        color: greenyellow;
+     }
+      
+       ul li {
+        display: inline-block;
+      margin-left: 2vw;
+      }
+      
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+      } 
+    /* #navbar {
+        display: none;
+        background-color: white;
+      }
+      
+      #navbar.show {
+        display: block;
+      }
+      
+   */
+}
+
+/* Tata letak untuk perangkat tablet dengan lebar antara 601px dan 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Atur tata letak sesuai kebutuhan untuk perangkat tablet */
+}
+
+/* Tata letak untuk perangkat desktop dengan lebar lebih dari 1024px */
+@media only screen and (min-width: 1025px) {
+
+    /* Atur tata letak sesuai kebutuhan untuk perangkat desktop */
+    @font-face {
+        font-family:  Megicsound;
+        src: url(myfont/Magic\ Sound.ttf);
+    }
+    @font-face {
+        font-family:  Code;
+        src: url(myfont/Code.ttf);
+    }
+        /* Atur tata letak sesuai kebutuhan untuk perangkat mobile */
+        body {
+            background-color: rgb(100, 93, 93);
+            margin: 0%;
+            overflow: hidden;
+          
+       
+    
+        }
+        .backgroundright {
+            overflow-y: scroll;
+            background-image: url("background1.jpg");
+            width: auto;
+            height: 967px;
+             /* background-position: center; */
+            filter: contrast(78%);
+            filter: brightness(90%);
+            overflow-x: hidden;
+        }
+        
+    
+        .certificatebox {
+            /* background-color: white; */
+            animation-fill-mode: forwards;
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            
+        }
+        .textcerti {
+            font-size: 2vw;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            font-weight: normal;
+            margin: 0%;
+            text-shadow: 1px 1px 6px black;
+        }
+    
+        .boxradius {
+            width: 13vw;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.574);
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+    
+     
+        .introtext .judul1 {
+            font-family: Arial, Helvetica, sans-serif;
+          
+            font-size: 5vw;
+            margin: 0%;
+            text-align: center;
+            opacity: 0;
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            color: white;
+            padding-top: 50px;
+            text-shadow: 1px 1px 6px black;
+        }
+        hr {
+            border: none;
+           width: 88%;
+            height: 2px;
+            background-color: white;
+           
+          }
+       
+          
+      /* textcommentbox */
+    
+    
+          .cobox {
+            /* background-color: white; */
+            animation-fill-mode: forwards;
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            margin-bottom: 3vw;
+            margin-top: 3vw;
+            animation-fill-mode: forwards;
+            animation-name: fadeIn;
+            animation-duration: 1s;
+         
+            }
+            .textjc {
+                font-size: 2vw;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                text-align: center;
+                font-weight: normal;
+                margin: 0%;
+                text-shadow: 1px 1px 6px black;
+        }
+    
+        .boxrd {
+          width: 13vw;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.574);
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+    
+    /* EMAIL CSS TEST */
+    
+     h2 {
+        text-align: center;
+        margin: 0%;
+      }
+      
+      .comment-box {
+        width: 50%;
+        height: auto;
+        margin-bottom: 10vw;
+        animation-fill-mode: forwards;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #77777772;
+      padding: 2vw;
+      box-shadow: 1px 2px 7px white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      
+      label{
+       
+        color: white;
+       
+       
+       
+      }
+      input,textarea {
+        margin-bottom: 10px;
+        display: block;
+        width: 60%;
+        color: white;
+        background-color: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            padding: 5px 0;
+          
+          
+      }
+      .btn_send {
+        display: block;
+        border: none;
+       width: 7vw;
+       height: 4vw;
+       border-radius: 6px;
+        background-color: greenyellow;
+        color: black;
+      }
+      
+      #commentList {
+        background-color: red;
+      width: 80%;
+      
+       
+        
+      }
+      
+      
+      #comments {
+        list-style-type: none;
+        padding: 0;
+       
+        
+      }
+      
+      .comment {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 3%;
+        margin-bottom: 10px;
+      }
+      
+      .comment .author {
+        font-weight: bold;
+      }
+      .boxtxcomment {
+        margin: 0%;
+      }
+      
+      .comment .email {
+        color: #777;
+      }
+      
+      .comment .message {
+        margin-top: 5px;
+      }
+    
+    
+        .paragraftintro {
+           
+            font-size: 20px;
+            text-align: center;
+            animation-name: fadeIn;
+            animation-fill-mode: forwards;
+            animation-duration: 1s;
+            padding-left: 5%;
+            padding-right: 5%;
+            
+            text-shadow: 1px 1px 4px black;
+            color: white;
+        }
+        @keyframes randomize {
+            0% {
+              transform: translate(0);
+            }
+            30% {
+              transform: translate(-2px, -4px) rotate(2deg);
+            }
+            60% {
+              transform: translate(4px, 2px) rotate(-2deg);
+            }
+            100% {
+              transform: translate(0);
+            }
+          }
+          
+          .paragraftintro {
+            animation: randomize 2s infinite;
+          }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+    
+            100% {
+                opacity: 1;
+            }
+        }
+    
+        .certibox {
+            animation-fill-mode: forwards;
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            /* background-color: rgb(155, 27, 27); */
+            overflow: hidden;
+            margin-top: 1vw;
+    
+    
+        }
+        .imgcertificate {
+            width: 27%;
+            margin-top:3vw;
+            margin-left: 13.90vw;
+            height: auto;
+            float: left;
+            box-shadow: 1px 2px 7px black;
+        }
+        .navbar{
+            padding-top: 10px;
+            height: 100%;
+            position: fixed;
+            width: 100%;
+            top: 95%;
+            z-index: 9999;
+          
+            background: linear-gradient(to bottom, #f8f8f861, #ffffff);
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+     .navbar ul li .Home{
+            color: greenyellow;
+         }
+          
+           ul li {
+            display: inline-block;
+          margin-left: 2vw;
+          }
+          
+          .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            text-shadow: 1px 1px 4px black;
+          } 
+
+        }
