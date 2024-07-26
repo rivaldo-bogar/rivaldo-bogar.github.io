@@ -19,13 +19,12 @@ const hiraganaToRomaji = {
     "ワ": "wa", "ヲ": "wo", "ン": "n"
 };
 
-const kanaBase = Object.keys(hiraganaToRomaji);
-
+const validToken = "VALDODEV123"; // Replace with your actual token
 let correctAnswer = '';
-let timer;
 let timeLeft = 30;
 let intervalId;
 const wrongSound = document.getElementById('wrong-sound');
+const kanaBase = Object.keys(hiraganaToRomaji);
 
 // Function to get a random Kana string
 function getRandomKanaString(length) {
@@ -67,7 +66,10 @@ function submitAnswer() {
     const answer = document.getElementById('answer').value.trim().toLowerCase();
     const result = document.getElementById('result');
 
-    if (answer === correctAnswer) {
+    if (answer === '') {
+        result.innerText = 'Jawaban tidak boleh kosong.';
+        result.className = 'incorrect';
+    } else if (answer === correctAnswer) {
         result.innerText = 'Jawaban Anda benar!';
         result.className = 'correct';
     } else {
@@ -90,8 +92,23 @@ function updateTimer() {
     }
 }
 
+function verifyToken() {
+    const tokenInput = document.getElementById('token').value.trim();
+    const tokenResult = document.getElementById('token-result');
+
+    if (tokenInput === validToken) {
+        tokenResult.innerText = 'Token benar, Anda bisa memulai kuis.';
+        tokenResult.className = 'correct-token';
+        document.getElementById('token-box').style.display = 'none';
+        document.getElementById('quiz-box').style.display = 'block';
+        displayQuestion();
+    } else {
+        tokenResult.innerText = 'Token salah, coba lagi.';
+        tokenResult.className = 'incorrect-token';
+    }
+}
+
 // Initialize the quiz when the page loads
 window.onload = function() {
-    displayQuestion();
     document.addEventListener('visibilitychange', handleVisibilityChange);
 };

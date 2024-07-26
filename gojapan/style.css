@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    background: url('Photo/japanback.jpg') no-repeat center center fixed;
+    background: url('/Photo/japanback.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -122,6 +122,22 @@ button:hover {
     position: relative;
     z-index: 1;
 }
+#token-box {
+    margin-bottom: 20px;
+}
+
+#token-result {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.correct-token {
+    color: green;
+}
+
+.incorrect-token {
+    color: red;
+}
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -131,4 +147,5 @@ button:hover {
 @keyframes rotateBackground {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+    
 }

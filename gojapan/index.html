@@ -9,7 +9,13 @@
 <body>
     <div class="container">
         <h1>Dikembangkan Oleh ValdoDev</h1>
-        <div class="quiz-box">
+        <div id="token-box" class="quiz-box">
+            <p>Masukkan Token untuk Memulai Kuis:</p>
+            <input type="text" id="token" placeholder="Masukkan Token">
+            <button onclick="verifyToken()">Masuk</button>
+            <p id="token-result"></p>
+        </div>
+        <div id="quiz-box" class="quiz-box" style="display: none;">
             <p id="question">Apa Romaji dari Kana ini: <span id="kana">あ</span>?</p>
             <input type="text" id="answer" placeholder="Jawaban Anda">
             <button onclick="submitAnswer()">Kirim Jawaban</button>

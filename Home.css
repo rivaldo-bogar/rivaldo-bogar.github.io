@@ -16,6 +16,9 @@
    
 
     }
+    .txtaboutme {
+      font-size: 1%;
+    }
     .backgroundright {
         overflow-y: scroll;
         background-image: url("background1.jpg");
