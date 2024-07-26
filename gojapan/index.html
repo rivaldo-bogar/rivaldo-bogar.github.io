@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Hiragana dan Katakana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dikembangkan Oleh ValdoDev</h1>
+        <div class="quiz-box">
+            <p id="question">Apa Romaji dari Kana ini: <span id="kana">あ</span>?</p>
+            <input type="text" id="answer" placeholder="Jawaban Anda">
+            <button onclick="submitAnswer()">Kirim Jawaban</button>
+            <p id="result"></p>
+            <p id="timer">Waktu tersisa: 30 detik</p>
+        </div>
+    </div>
+    <audio id="wrong-sound" src="wrongans.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
