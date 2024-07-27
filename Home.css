@@ -29,7 +29,7 @@
   
   .social-links a {
       text-decoration: none;
-      font-size: 20px;
+      font-size: 16px;
       color: #ffffff;
       transition: color 0.3s ease;
   }
@@ -40,7 +40,7 @@
 
 
 .contactme .me {
-  font-size: 4vh;
+  font-size: 3vh;
   color: rgb(255, 255, 255);
   
   text-align: center;
