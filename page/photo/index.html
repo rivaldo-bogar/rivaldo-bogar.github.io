@@ -3,24 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="photo.css">
+    <title>Flashcard Harian</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
     <div class="navbar">
         <ul>
             <li><a href="../../index.html" class="Home">Home</a></li>
-            <li><a href="https://drive.google.com/file/d/1iWyhqV2dzRlg_2eG1TY1-Cbstmh6mPgn/view?usp=sharing" class="CV" target="_blank">CV</a></li>
-            <li><a href="../archivement/archivement.html" class="Archivement">Blender 3D</a></li>
-            <li><a href="../photo/index.html">Photo</a></li>
+            <li><a href="https://drive.google.com/file/d/1iWyhqV2dzRlg_2eG1TY1-Cbstmh6mPgn/view?usp=sharing" class="About" target="_blank">CV</a></li>
+            <li><a href="../archivement/archivement.html">Blender 3D</a></li>
+            <li><a href="../photo/index.html" class="note">My note</a></li>
         </ul>
 
     </div>
-    <div class="gallery"></div>
-    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-storage.js"></script>
-    <script src="script.js"></script>
-
+    <div class="waves"></div>
+    <div class="container">
+        <div class="flashcard">
+            <div class="inner">
+                <div class="front">
+                    <p>Shortcut: Win + S</p>
+                </div>
+                <div class="back">
+                    <p>Searching</p>
+                </div>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="inner">
+                <div class="front">
+                    <p>Shortcut: Win + D</p>
+                </div>
+                <div class="back">
+                    <p>Close All Tab</p>
+                </div>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="inner">
+                <div class="front">
+                    <p>Shortcut: Ctrl + X</p>
+                </div>
+                <div class="back">
+                    <p>Cut selected text</p>
+                </div>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="inner">
+                <div class="front">
+                    <p>Shortcut: Ctrl + Z</p>
+                </div>
+                <div class="back">
+                    <p>Undo last action</p>
+                </div>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="inner">
+                <div class="front">
+                    <p>Shortcut: Ctrl + Y</p>
+                </div>
+                <div class="back">
+                    <p>Redo last action</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
