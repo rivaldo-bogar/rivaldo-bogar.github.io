@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valdo Searching</title>
+  <style>
+    /* Global Reset & Font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Body dan Tema Gelap */
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 1rem;
+    }
+
+    /* Animasi Gelombang di Background */
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200%;
+      height: 200px;
+      background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyMDAiIHZpZXdCb3g9IjAgMCAxNjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJtMCwxMDBjNDY1LjMsLTE2NS45LDg0NS40LDEzOS4zLTEwNC4yYzEyNC41LDM5LjQsMjExLjMsMTc1LjYsMTM2LjcsMjU0LjZjLTg3LjIsNjYuMy0yNjEuMywyMjYuNy0zNjkuNSwyNTQuNmMtNzcuNywzMS41LTEzNC4zLTE2NC0xNjkuOS0yMjQuOGMwLDAtMzI4LDM2LjctNTI1LjYsNjIuNmMtMTI2LjYsNzkuNi0xMTYuNSwyMTUuMi0xMzkuMiwzNTkuNmMtMTI3LjYsMTc0LjQtMjMxLjQsMzA1LjEtNDMyLjksMzM2LjZjLTEwMy43LDI4LjUtMTU2LjQsLTk3LjYtMTQ1LjYsLTE1Ni42YzEyMC42LDE4OS40LDI4My4xLDMxNy42LDQxMS45LDM5Ny41YzEyOC43LDY0LjksMjAxLjcsMjQ4LjUsMjA1LjQsMzM2LjYtODAuMyw2LjMtMjc1LjIsMTU1LjktMzY0LjksMTM5LjNDMTQ3LjMsMTA5LjcsMjQsMTMzLjksMCwxMDB6IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjI1Ii8+Cjwvc3ZnPg==');
+      background-size: 50% 100%;
+      animation: wave-animation 10s linear infinite;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    @keyframes wave-animation {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Container Pencarian */
+    .search-container {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 2rem;
+      position: relative;
+      z-index: 2; /* Pastikan berada di atas gelombang */
+    }
+
+    /* Input Pencarian */
+    .search-input {
+      width: 100%;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      background: #1e1e1e;
+      color: #e0e0e0;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="%23e0e0e0" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke="%23e0e0e0" stroke-width="2" fill="none"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="%23e0e0e0" stroke-width="2" stroke-linecap="round"/></svg>');
+      background-repeat: no-repeat;
+      background-position: 1rem center;
+      background-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .search-input:focus {
+      outline: none;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Container Saran Pencarian */
+    .suggestions-container {
+      position: absolute;
+      width: 100%;
+      max-height: 300px;
+      overflow-y: auto;
+      background: #1e1e1e;
+      border-radius: 15px;
+      margin-top: 0.5rem;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      display: none;
+      z-index: 3;
+    }
+
+    .suggestion-item {
+      padding: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border-bottom: 1px solid #333;
+    }
+
+    .suggestion-item:last-child {
+      border-bottom: none;
+    }
+
+    .suggestion-item:hover,
+    .suggestion-item.highlighted {
+      background: #333;
+    }
+
+    .no-results {
+      padding: 1rem;
+      color: #aaa;
+      text-align: center;
+    }
+
+    /* Modal Popup untuk Hasil Pencarian */
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.8);
+      background: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 10;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .modal.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .modal-title {
+      font-size: 1.2rem;
+      color: #e0e0e0;
+    }
+
+    .modal-close {
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      color: #e0e0e0;
+      cursor: pointer;
+    }
+
+    .modal-body {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .search-input {
+        font-size: 1rem;
+        padding: 0.8rem 2.2rem;
+      }
+
+      .suggestion-item {
+        padding: 0.8rem;
+      }
+
+      .modal {
+        width: 95%;
+        max-width: 350px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .search-input {
+        font-size: 0.9rem;
+        padding: 0.7rem 2rem;
+      }
+
+      .modal {
+        width: 95%;
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1> < VALDO SEARCHING > </VALDO></h1>
+  <div class="search-container">
+    <input
+      type="text"
+      class="search-input"
+      placeholder="Cari sesuatu..."
+      autocomplete="off"
+    />
+    <div class="suggestions-container"></div>
+  </div>
+
+  <!-- Modal Popup -->
+  <div class="modal" id="resultModal">
+    <div class="modal-header">
+      <span class="modal-title">Hasil Pencarian</span>
+      <button class="modal-close" id="modalClose">&times;</button>
+    </div>
+    <div class="modal-body" id="modalContent">
+      <!-- Konten hasil pencarian akan dimasukkan di sini -->
+    </div>
+  </div>
+
+  <!-- Elemen Animasi Gelombang -->
+  <div class="wave"></div>
+
+  <script>
+    // Fungsi untuk memuat data dari file data.txt
+    async function loadData() {
+      try {
+        const response = await fetch('data.txt');
+        const data = await response.text();
+        // Pastikan hanya data yang tidak kosong yang diambil
+        return data.split('\n').map(item => item.trim()).filter(item => item.length > 0);
+      } catch (error) {
+        console.error('Error loading data:', error);
+        return [];
+      }
+    }
+
+    // Variabel Global
+    let allData = [];
+    let searchTimeout;
+
+    // Inisialisasi Utama
+    async function initialize() {
+      allData = await loadData();
+
+      const searchInput = document.querySelector('.search-input');
+      const suggestionsContainer = document.querySelector('.suggestions-container');
+      const modal = document.getElementById('resultModal');
+      const modalContent = document.getElementById('modalContent');
+      const modalClose = document.getElementById('modalClose');
+
+      // Event listener untuk input pencarian
+      searchInput.addEventListener('input', (e) => {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+          const searchTerm = e.target.value.toLowerCase();
+          showSuggestions(searchTerm);
+        }, 300);
+      });
+
+      // Event listener untuk menekan tombol Enter
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          performSearch(searchInput.value);
+        }
+      });
+
+      // Menampilkan saran pencarian berdasarkan input
+      function showSuggestions(searchTerm) {
+        if (!searchTerm) {
+          suggestionsContainer.style.display = 'none';
+          return;
+        }
+
+        const filteredData = allData.filter(item =>
+          item.toLowerCase().includes(searchTerm)
+        );
+
+        if (filteredData.length > 0) {
+          const suggestionsHTML = filteredData
+            .map(item => `<div class="suggestion-item">${item}</div>`)
+            .join('');
+          suggestionsContainer.innerHTML = suggestionsHTML;
+          suggestionsContainer.style.display = 'block';
+        } else {
+          suggestionsContainer.innerHTML =
+            '<div class="no-results">Tidak ada hasil ditemukan</div>';
+          suggestionsContainer.style.display = 'block';
+        }
+
+        // Tambahkan event listener untuk setiap item saran
+        document.querySelectorAll('.suggestion-item').forEach(item => {
+          item.addEventListener('click', () => {
+            searchInput.value = item.textContent;
+            suggestionsContainer.style.display = 'none';
+            performSearch(item.textContent);
+          });
+        });
+      }
+
+      // Fungsi untuk melakukan pencarian dan menampilkan modal popup
+      function performSearch(term) {
+        console.log('Searching for:', term);
+        modalContent.textContent = term; // Tampilkan teks hasil pencarian
+        modal.classList.add('active');
+      }
+
+      // Event listener untuk menutup modal
+      modalClose.addEventListener('click', () => {
+        modal.classList.remove('active');
+      });
+
+      // Tutup modal jika klik di luar modal
+      window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('active');
+        }
+      });
+
+      // Sembunyikan saran pencarian saat klik di luar input dan container saran
+      document.addEventListener('click', (e) => {
+        if (
+          !searchInput.contains(e.target) &&
+          !suggestionsContainer.contains(e.target)
+        ) {
+          suggestionsContainer.style.display = 'none';
+        }
+      });
+    }
+
+    initialize();
+  </script>
+</body>
+</html>
