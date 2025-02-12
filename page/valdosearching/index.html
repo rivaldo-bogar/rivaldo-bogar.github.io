@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -229,7 +229,7 @@
     // Fungsi untuk memuat data dari file data.txt
     async function loadData() {
       try {
-        const response = await fetch('data.txt');
+        const response = await fetch('iwiptenan.txt');
         const data = await response.text();
         // Pastikan hanya data yang tidak kosong yang diambil
         return data.split('\n').map(item => item.trim()).filter(item => item.length > 0);
