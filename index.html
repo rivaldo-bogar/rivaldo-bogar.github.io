@@ -62,13 +62,49 @@
         <h2 class="me">My Sosmed</h2>
         <div class="social-links">
             <ul>
-                <li><a href="https://www.instagram.com/valdo.bgr/profilecard/?igsh=MWhtZWt0cHYzbmw1dA==" target="_blank">Instagram</a></li>
+                <li><a href="https://www.instagram.com/valdo.bgr/profilecard/?igsh=MWhtZWt0cHYzbmw1dA==" target="_blank" id="instagramLink">Instagram</a></li>
                 <li><a href="https://github.com/rivaldo-bogar?tab=repositories" target="_blank">GitHub</a></li>
                 <li><a href="https://www.facebook.com/rivaldo.bogar.52/" target="_blank">Facebook</a></li>
                 <br><br><br>
             </ul>
         </div>
     </div>
+    <!-- Pop-up Modal -->
+<div id="permissionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Code Izin</h2>
+      <input type="text" id="permissionCode" placeholder="Masukkan Code Izin">
+      <button id="validateButton">Validasi</button>
+    </div>
+  </div>
 </body>
 
+<script>
+    document.getElementById('instagramLink').addEventListener('click', function(event) {
+  event.preventDefault(); // Mencegah navigasi langsung ke link
+  document.getElementById('permissionModal').style.display = 'block'; // Menampilkan modal
+});
+
+document.getElementsByClassName('close')[0].addEventListener('click', function() {
+  document.getElementById('permissionModal').style.display = 'none'; // Menyembunyikan modal
+});
+
+document.getElementById('validateButton').addEventListener('click', function() {
+  const code = document.getElementById('permissionCode').value;
+  if (code === "1302") { // Ganti "1234" dengan code izin yang valid
+    window.open("https://www.instagram.com/valdo.bgr/profilecard/?igsh=MWhtZWt0cHYzbmw1dA==", "_blank"); // Buka link Instagram di tab baru
+  } else {
+    alert("Code Izin salah! Silakan coba lagi.");
+  }
+});
+
+// Menutup modal jika pengguna mengklik di luar modal
+window.onclick = function(event) {
+  const modal = document.getElementById('permissionModal');
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </html>
