@@ -9,9 +9,9 @@
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="#" class="Home">Home</a></li>
+            <li><a href="../../index.html" class="Home">Home</a></li>
             <li><a href="https://drive.google.com/file/d/1iWyhqV2dzRlg_2eG1TY1-Cbstmh6mPgn/view?usp=sharing"  target="_blank">CV</a></li>
-            <li><a href="page/archivement/archivement.html">Blender 3D</a></li>
+            <li><a href="../archivement/archivement.html">Blender 3D</a></li>
             <li><a href="page/ebook/index.html" class="ebook">E-Book</a></li>
            
         </ul>
@@ -19,17 +19,14 @@
     <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; color: white;">My learning</h1>
 
     <div class="film-container">
-        <div class="film-box" onclick="showPopup('Film 1', 'Sinopsis Film 1...')">
+        <div class="film-box" onclick="showPopup('Teknikal Research', 'https://drive.google.com/file/d/1aPrSvdkBDEaKjtgiwICYuJO5NbXIFuje/view?usp=drivesdk', 'Dasar-Dasar harus diperhatikan untuk teknikal research')">
             <img src="../img/comingsoon.png" alt="Film 1">
         </div>
-        <div class="film-box" onclick="showPopup('Film 2', 'Sinopsis Film 2...')">
-            <img src="../img/comingsoon.png" alt="Film 2">
+        <div class="film-box" onclick="showPopup('Film 2', 'https://drive.google.com/file/d/VIDEO_ID_2/preview', 'Sinopsis Film 2...')">
+            <img src="https://via.placeholder.com/150" alt="Film 2">
         </div>
-        <div class="film-box" onclick="showPopup('Film 3', 'Sinopsis Film 3...')">
-            <img src="../img/comingsoon.png" alt="Film 3">
-        </div>
-        <div class="film-box" onclick="showPopup('Film 3', 'Sinopsis Film 3...')">
-            <img src="../img/comingsoon.png" alt="Film 3">
+        <div class="film-box" onclick="showPopup('Film 3', 'https://drive.google.com/file/d/VIDEO_ID_3/preview', 'Sinopsis Film 3...')">
+            <img src="https://via.placeholder.com/150" alt="Film 3">
         </div>
         <!-- Tambahkan lebih banyak box film di sini -->
     </div>
@@ -37,19 +34,23 @@
     <div id="popup" class="popup">
         <div class="popup-content">
             <span class="close" onclick="closePopup()">&times;</span>
+            <iframe id="popup-video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
             <h2 id="popup-title">Judul Film</h2>
             <p id="popup-synopsis">Sinopsis film...</p>
         </div>
     </div>
 
-    <script>function showPopup(title, synopsis) {
+
+    <script>function showPopup(title, videoUrl, synopsis) {
         document.getElementById('popup-title').innerText = title;
         document.getElementById('popup-synopsis').innerText = synopsis;
+        document.getElementById('popup-video').src = videoUrl;
         document.getElementById('popup').style.display = 'flex';
     }
     
     function closePopup() {
         document.getElementById('popup').style.display = 'none';
+        document.getElementById('popup-video').src = ''; // Menghentikan video saat popup ditutup
     }</script>
 </body>
 </html>
