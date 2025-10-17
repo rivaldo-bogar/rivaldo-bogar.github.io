@@ -2,75 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Home.css">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Home.css">
+  <title>Home</title>
 </head>
 
-<body>  
-    <div class="navbar">
-        <ul>
-            <li><a href="#" class="Home">Home</a></li>
-            <li><a href="https://drive.google.com/file/d/1qn0ydOG1YM21HBGuIR1MqvIbquuIPQdf/view?usp=sharing" class="About" target="_blank">CV</a></li>
-            <li><a href="page/archivement/archivement.html">Blender 3D</a></li>
-            <li><a href="page/ebook/index.html">Note Gabut</a></li>
-           
-        </ul>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="#" class="Home active">Home</a></li>
+      <li><a href="https://drive.google.com/file/d/1qn0ydOG1YM21HBGuIR1MqvIbquuIPQdf/view?usp=sharing" class="About" target="_blank">CV</a></li>
+      <li><a href="page/archivement/archivement.html">Blender 3D</a></li>
+      <li><a href="page/ebook/index.html">Note Gabut</a></li>
+    </ul>
+  </div>
+
+  <!-- Background wrapper with overlay -->
+  <div class="backgroundright">
+    <div class="overlay"></div>
+
+    <div class="introtext">
+      <h1 class="judul1">I'm Valdo<br><span>Junior Programmer</span></h1>
+      <p class="paragraftintro">
+        Hi..guyss, jangan dulu di retas ya.. soalnya masih dalam proses tahap pembelajaran.
+      </p>
     </div>
-    <div class="backgroundright">
-        <div class="introtext">
-            <h1 class="judul1">I'm Valdo<br>Junior Programmer</h1>
-            <p class="paragraftintro">
-                Hi..guyss,jangan dulu di retas ya..soalnya masih dalam proses tahap pembelajaran.
-            </p>
-        </div>
-        <div class="certificatebox">
-            <div class="boxradius">
-                <h3 class="textcerti">certificate</h3>
-            </div>
-        </div>
-        <div class="certibox">
-            <div>
-                <img src="./certificate/certificate.png" alt="" class="imgcertificate">
-            </div>
-            <div>
-                <img src="./certificate/LinuxCommand.PNG" alt="" class="imgcertificate">
-            </div>
-            <div>
-                <img src="./certificate/AdobeProfesionalCertificate.PNG" alt="" class="imgcertificate">
-            </div>
-            <div>
-                <img src="./certificate/gamedevcer.png" alt="" class="imgcertificate">
-            </div>
-        </div>
-        <hr>
-        <!-- testing -->
 
+    <!-- Certificate Section -->
+    <div class="certificatebox">
+      <div class="boxradius">
+        <h3 class="textcerti">Certificates</h3>
+      </div>
+    </div>
 
-       
-    <!-- <div id="commentList">
-        <h2>comment</h2>
-        <ul id="comments"></ul>
-    </div> -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-    <script src="index.js"></script>
+    <div class="certibox">
+      <div><img src="./certificate/certificate.png" alt="certificate" class="imgcertificate"></div>
+      <div><img src="./certificate/LinuxCommand.PNG" alt="certificate" class="imgcertificate"></div>
+      <div><img src="./certificate/AdobeProfesionalCertificate.PNG" alt="certificate" class="imgcertificate"></div>
+      <div><img src="./certificate/gamedevcer.png" alt="certificate" class="imgcertificate"></div>
+    </div>
+    <hr>
 
+    <!-- Contact -->
     <div class="contactme">
-        <h2 class="me">My Sosmed</h2>
-        <div class="social-links">
-            <ul>
-                <li><a href="https://www.instagram.com/valdo.bgr/profilecard/?igsh=MWhtZWt0cHYzbmw1dA==" target="_blank" id="instagramLink">Instagram</a></li>
-                <li><a href="https://github.com/rivaldo-bogar?tab=repositories" target="_blank">GitHub</a></li>
-                <li><a href="https://www.facebook.com/rivaldo.bogar.52/" target="_blank">Facebook</a></li>
-                <br><br><br>
-            </ul>
-        </div>
+      <h2 class="me">My Sosmed</h2>
+      <div class="social-links">
+        <ul>
+          <li><a href="https://www.instagram.com/valdo.bgr/profilecard/?igsh=MWhtZWt0cHYzbmw1dA==" target="_blank" id="instagramLink">Instagram</a></li>
+          <li><a href="https://github.com/rivaldo-bogar?tab=repositories" target="_blank">GitHub</a></li>
+          <li><a href="https://www.facebook.com/rivaldo.bogar.52/" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
     </div>
-    <!-- Pop-up Modal -->
-<div id="permissionModal" class="modal">
+  </div>
+
+  <!-- Pop-up Modal -->
+  <div id="permissionModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>Code Izin</h2>
@@ -78,45 +68,50 @@
       <button id="validateButton">Validasi</button>
     </div>
   </div>
+
+  <!-- Sambutan -->
+  <div class="sambutantext">
+    <h1>WELCOME</h1>
+    <h3>introduction :</h3>
+    <p>
+      Halo, dunia digital! Saya Valdo, seorang pemuda asal Manado yang punya passion besar di dunia teknologi,
+      khususnya pengembangan game dan kecerdasan buatan (Artificial Intelligence). Sebagai lulusan Sarjana Komputer dari jurusan Informatika,
+      saya selalu tertarik untuk mengeksplorasi bagaimana teknologi dapat menciptakan solusi kreatif dan inovatif.<br><br>
+      Terima kasih sudah mampir, dan selamat menjelajahi website saya!<br>
+      <strong>Valdo — From Manado with Code! 🚀</strong>
+    </p>
+  </div>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="index.js"></script>
+
+  <!-- Modal Script -->
+  <script>
+    document.getElementById('instagramLink').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('permissionModal').style.display = 'flex';
+    });
+
+    document.querySelector('.close').addEventListener('click', function () {
+      document.getElementById('permissionModal').style.display = 'none';
+    });
+
+    document.getElementById('validateButton').addEventListener('click', function () {
+      const code = document.getElementById('permissionCode').value;
+      if (code === "1302") {
+        window.open("https://www.instagram.com/valdo.bgr/profilecard/?igsh=MWhtZWt0cHYzbmw1dA==", "_blank");
+      } else {
+        alert("Code Izin salah! Silakan coba lagi.");
+      }
+    });
+
+    window.onclick = function (event) {
+      const modal = document.getElementById('permissionModal');
+      if (event.target === modal) modal.style.display = "none";
+    };
+  </script>
 </body>
-<br>
-<div class="sambutantext" style="background-color: rgba(0, 0, 0, 0.537);">
-    <h1 style="color: rgb(164, 61, 220); text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-shadow: 1px 1px 2px white;">WELCOME</h1>
 
-    <h3 style="color: white; margin-left: 2em; font-family: sans-serif; font-size: 1em;">introduction :</h3>
-    <p style="color: white; margin-left: 2em; font-family: sans-serif; font-size: 1em;">Halo, dunia digital! Saya Valdo, seorang pemuda asal Manado yang punya passion besar di dunia teknologi, khususnya pengembangan game dan kecerdasan buatan (Artificial Intelligence). Sebagai lulusan Sarjana Komputer dari jurusan Informatika, saya selalu tertarik untuk mengeksplorasi bagaimana teknologi dapat menciptakan solusi kreatif dan inovatif.
-<br>
-<br>
-       
-        Terima kasih sudah mampir, dan selamat menjelajahi website saya!
-        Valdo
-        From Manado with Code! 🚀</p>
-</div>
-<script>
-    document.getElementById('instagramLink').addEventListener('click', function(event) {
-  event.preventDefault(); // Mencegah navigasi langsung ke link
-  document.getElementById('permissionModal').style.display = 'block'; // Menampilkan modal
-});
-
-document.getElementsByClassName('close')[0].addEventListener('click', function() {
-  document.getElementById('permissionModal').style.display = 'none'; // Menyembunyikan modal
-});
-
-document.getElementById('validateButton').addEventListener('click', function() {
-  const code = document.getElementById('permissionCode').value;
-  if (code === "1302") { // Ganti "1234" dengan code izin yang valid
-    window.open("https://www.instagram.com/valdo.bgr/profilecard/?igsh=MWhtZWt0cHYzbmw1dA==", "_blank"); // Buka link Instagram di tab baru
-  } else {
-    alert("Code Izin salah! Silakan coba lagi.");
-  }
-});
-
-// Menutup modal jika pengguna mengklik di luar modal
-window.onclick = function(event) {
-  const modal = document.getElementById('permissionModal');
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
 </html>
