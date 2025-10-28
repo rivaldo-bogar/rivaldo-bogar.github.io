@@ -1,142 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Ebook</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ebook - My Learning</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="../../index.html" class="Home">Home</a></li>
-            <li><a href="https://drive.google.com/file/d/1iWyhqV2dzRlg_2eG1TY1-Cbstmh6mPgn/view?usp=sharing"  target="_blank">CV</a></li>
-            <li><a href="../archivement/archivement.html">Blender 3D</a></li>
-            <li><a href="page/ebook/index.html" class="ebook">Note Gabut</a></li>
-           
-        </ul>
-    </div>
-    <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; color: white; text-shadow: 1px 1px 7px rgb(248, 44, 238);">My learning</h1>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="https://drive.google.com/file/d/1iWyhqV2dzRlg_2eG1TY1-Cbstmh6mPgn/view?usp=sharing" target="_blank">CV</a></li>
+      <li><a href="../archivement/archivement.html">Blender 3D</a></li>
+      <li><a href="page/ebook/index.html" class="active">Note Gabut</a></li>
+    </ul>
+  </nav>
 
-    <div class="film-container">
-        <div class="film-box" onclick="showPopup('Teknikal Research', 'https://drive.google.com/file/d/1aPrSvdkBDEaKjtgiwICYuJO5NbXIFuje/view?usp=drivesdk', 'Dasar-Dasar harus diperhatikan untuk teknikal research')">
-            <img src="../img/valpic3.png" alt="Terjadi kesalahan">
-        </div>
-        <div class="film-box" onclick="showPopup('Maintenance', 'https://drive.google.com/file/d/VIDEO_ID_2/preview', 'Sinopsis Film 2...')">
-            <img src="../img/valpic1.png" alt="Terjadi kesalahan">
-        </div>
-        <div class="film-box" onclick="showPopup('Maintenance', 'https://drive.google.com/file/d/VIDEO_ID_3/preview', 'Sinopsis Film 3...')">
-            <img src="../img/valpic2.png" alt="Terjadi kesalahan">
-        </div>
-        <!-- Tambahkan lebih banyak box film di sini -->
+  <h1 class="title">My Learning</h1>
+
+  <!-- GALERI MATERI / FILM -->
+  <div class="film-container">
+    <div class="film-box" onclick="showPopup('Teknikal Research', 'https://drive.google.com/file/d/1aPrSvdkBDEaKjtgiwICYuJO5NbXIFuje/preview', 'Dasar-Dasar harus diperhatikan untuk teknikal research')">
+      <img src="../img/valpic3.png" alt="Materi 1">
+      <p>Teknikal Research</p>
     </div>
 
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <iframe id="popup-video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-            <h2 id="popup-title">Judul Film</h2>
-            <p id="popup-synopsis">Sinopsis film...</p>
-        </div>
+    <div class="film-box" onclick="showPopup('Maintenance', 'https://drive.google.com/file/d/VIDEO_ID_2/preview', 'Materi tentang maintenance')">
+      <img src="../img/valpic1.png" alt="Materi 2">
+      <p>Maintenance</p>
     </div>
-    <audio id="background-music" loop>
-        <source src="../sound/sound.mp3".mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
 
+    <div class="film-box" onclick="showPopup('Smart Contract', 'https://drive.google.com/file/d/VIDEO_ID_3/preview', 'Penjelasan dasar smart contract')">
+      <img src="../img/valpic2.png" alt="Materi 3">
+      <p>Smart Contract</p>
+    </div>
+  </div>
 
-    <!-- bagian sini topic dari dipelajari -->
+  <!-- POPUP -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <iframe id="popup-video" frameborder="0" allowfullscreen></iframe>
+      <h2 id="popup-title"></h2>
+      <p id="popup-synopsis"></p>
+    </div>
+  </div>
 
+  <!-- AUDIO -->
+  <audio id="background-music" loop>
+    <source src="../sound/sound.mp3" type="audio/mpeg">
+  </audio>
 
-    <div class="topic1" style="width: 95%;"><h2 style="color: rgb(149, 10, 187); margin-left: 1em;">Apa itu Cryptocurrency?</h2>
-    <p style="color: rgb(255, 255, 255); margin-left: 1em; font-family:Arial, Helvetica, sans-serif;">Cryptocurrency adalah uang digital yang hanya ada di dunia maya. Bayangkan seperti uang di game, tapi bisa digunakan di dunia nyata. Bedanya, cryptocurrency tidak dikontrol oleh bank atau pemerintah, melainkan oleh teknologi yang disebut blockchain.
-<br><br>
-Blockchain ibarat buku catatan digital yang mencatat semua transaksi. Buku ini tidak disimpan di satu tempat, tapi tersebar di banyak komputer di seluruh dunia. Ini membuatnya aman dan sulit dipalsukan.
-<br><br>
-Contoh cryptocurrency yang paling terkenal adalah Bitcoin. Orang bisa membeli, menjual, atau menukar cryptocurrency seperti mata uang biasa, tapi nilainya bisa naik turun dengan cepat.
-<br><br>
-Singkatnya, cryptocurrency adalah uang digital yang aman, terdesentralisasi, dan bisa digunakan untuk bertransaksi secara online.</p></div>
+  <!-- MATERI -->
+  <section class="topics">
+    <div class="topic">
+      <h2>Apa itu Cryptocurrency?</h2>
+      <p>Cryptocurrency adalah uang digital yang hanya ada di dunia maya... <br><br>Contoh cryptocurrency yang paling terkenal adalah Bitcoin...</p>
+    </div>
 
-         <!-- TOPIC DUA -->
-<div class="topic1" style="width: 95%;"><h2 style="color: rgb(149, 10, 187); margin-left: 1em;">Apa itu Smart Money</h2>
-    <p style="color: rgb(255, 255, 255); margin-left: 1em; font-family:Arial, Helvetica, sans-serif;">Smart Money dalam trading crypto mengacu pada uang yang dikelola oleh pelaku pasar yang berpengalaman dan memiliki informasi atau sumber daya lebih baik, seperti institusi besar, hedge fund, atau trader profesional. Mereka biasanya memiliki akses ke data, analisis, dan alat canggih yang memungkinkan mereka mengambil keputusan lebih akurat.
-<br><br>
-        Ciri-ciri Smart Money:
-        Gerakan Pasar yang Signifikan: Smart money sering memicu pergerakan harga besar karena volume transaksi mereka yang tinggi.
-        <br><br>
-        Mengambil Posisi Sebelum Tren: Mereka biasanya masuk ke pasar sebelum tren besar dimulai, mengambil posisi awal sebelum rata-rata trader (retail trader) menyadarinya.
-        <br><br>
-        Manipulasi Pasar: Terkadang, smart money menggunakan strategi seperti "stop hunting" (mengambil keuntungan dari stop loss trader kecil) atau menciptakan false breakout (breakout palsu) untuk mengelabui trader retail.
-        <br><br>
-        Cara Mengidentifikasi Smart Money:
-        Volume Trading Tinggi: Peningkatan volume yang tidak biasa sering kali menunjukkan kehadiran smart money.
-        <br><br>
-        Analisis Order Flow: Melihat aliran order besar di buku order (order book) bisa memberi petunjuk tentang aktivitas smart money.
-        <br><br>
-        Perilaku Harga: Pola harga yang tidak biasa, seperti breakout setelah konsolidasi panjang, bisa menjadi tanda smart money sedang bergerak.</p></div>
+    <div class="topic">
+      <h2>Apa itu Smart Money?</h2>
+      <p>Smart Money dalam trading crypto mengacu pada uang yang dikelola oleh pelaku pasar profesional...</p>
+    </div>
 
+    <div class="topic">
+      <h2>Apa itu Smart Contract?</h2>
+      <p>Smart Contract adalah program komputer yang berjalan di atas blockchain dan otomatis mengeksekusi perintah...</p>
+    </div>
+  </section>
 
+  <!-- TAMBAH MATERI -->
+  <section class="add-topic">
+    <h3>Tambah Materi Baru</h3>
+    <textarea placeholder="Tulis materi yang baru kamu pelajari di sini..."></textarea>
+    <button>Tambahkan</button>
+  </section>
 
-
-        <div class="topic1" style="width: 95%;"><h2 style="color: rgb(149, 10, 187); margin-left: 1em;">Apa itu smart kontrak</h2>
-
-
-            <p style="color: rgb(255, 255, 255); margin-left: 1em; font-family:Arial, Helvetica, sans-serif; ">Smart Contract (Kontrak Cerdas) adalah program komputer yang berjalan di atas blockchain (seperti Ethereum) dan secara otomatis menjalankan perintah atau kesepakatan ketika kondisi tertentu terpenuhi. Bayangkan seperti mesin penjual otomatis: Anda memasukkan uang (memenuhi kondisi), dan mesin secara otomatis mengeluarkan barang yang Anda pilih (eksekusi kontrak).
-                <br><br>
-                Cara Kerja Smart Contract:
-                Dibuat dengan Kode: Smart contract ditulis dalam bahasa pemrograman (misalnya, Solidity untuk Ethereum) dan berisi aturan atau logika yang harus dipenuhi.
-                
-                <br><br>
-                Dijalankan di Blockchain: Setelah di-deploy ke blockchain, smart contract tidak bisa diubah dan berjalan secara otomatis.
-                <br><br>
-                
-                Transparan dan Aman: Semua pihak bisa melihat kode dan transaksi, tetapi tidak bisa memanipulasi karena blockchain bersifat terdesentralisasi.
-                <br><br>
-                
-                Contoh Penggunaan:
-                <br>
-                Pembayaran Otomatis: Jika Anda menyewa rumah, pembayaran sewa bisa otomatis ditransfer ke pemilik saat tanggal jatuh tempo tiba.
-                <br><br>
-                
-                Token Crypto: Smart contract digunakan untuk membuat dan mengelola token seperti ERC-20.
-                <br><br>
-                
-                DeFi (Decentralized Finance): Layanan pinjam-meminjam atau trading otomatis di platform seperti Uniswap atau Aave.
-                <br><br>
-                
-                Keuntungan:
-                <br>
-                Tanpa Perantara: Tidak perlu pihak ketiga (seperti bank atau notaris).
-                <br><br>
-                
-                Transparan: Semua transaksi tercatat di blockchain.
-                <br><br>
-                
-                Efisien: Proses otomatis mengurangi waktu dan biaya.
-                <br><br>
-                
-                Kekurangan:
-                <br>
-                Tidak Fleksibel: Setelah di-deploy, smart contract tidak bisa diubah.
-                
-                Bug atau Kelemahan: Jika ada kesalahan dalam kode, bisa dieksploitasi (contoh: kasus hack DAO).</p></div>
-                <br><br>
-
-    <script>function showPopup(title, videoUrl, synopsis) {
-        document.getElementById('popup-title').innerText = title;
-        document.getElementById('popup-synopsis').innerText = synopsis;
-        document.getElementById('popup-video').src = videoUrl;
-        document.getElementById('popup').style.display = 'flex';
+  <script>
+    function showPopup(title, videoUrl, synopsis) {
+      document.getElementById('popup-title').innerText = title;
+      document.getElementById('popup-synopsis').innerText = synopsis;
+      document.getElementById('popup-video').src = videoUrl;
+      document.getElementById('popup').style.display = 'flex';
     }
-    
+
     function closePopup() {
-        document.getElementById('popup').style.display = 'none';
-        document.getElementById('popup-video').src = ''; // Menghentikan video saat popup ditutup
+      document.getElementById('popup').style.display = 'none';
+      document.getElementById('popup-video').src = '';
     }
-    
+
     document.addEventListener("DOMContentLoaded", function() {
-    var audio = document.getElementById("background-music");
-    audio.play();
-});</script>
+      var audio = document.getElementById("background-music");
+      audio.volume = 0.4;
+      audio.play();
+    });
+  </script>
 </body>
 </html>
